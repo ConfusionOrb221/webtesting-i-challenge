@@ -1,0 +1,23 @@
+{
+  "name": "webtesting-i-challenge",
+  "version": "1.0.0",
+  "description": "Jest testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConfusionOrb221/webtesting-i-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ConfusionOrb221/webtesting-i-challenge/issues"
+  },
+  "homepage": "https://github.com/ConfusionOrb221/webtesting-i-challenge#readme",
+  "dependencies": {
+    "@types/jest": "^25.2.1",
+    "jest": "^25.5.2"
+  }
+}

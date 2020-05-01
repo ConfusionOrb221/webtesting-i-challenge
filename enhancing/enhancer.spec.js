@@ -15,6 +15,7 @@ describe('Testing Enhancer functions', () =>{
             expect(item).not.toBe(obj);
         });
     })
+    
     describe('Enhancment succeed functionality', () => {
         it('should increase enhancment', () => {
             let obj = enhancer.succeed(item);
@@ -67,6 +68,14 @@ describe('Testing Enhancer functions', () =>{
                 expect(item).not.toBe(obj);
             } 
         });
+
+        it('durability does not go below 0', () =>{
+            item.durability = 1;
+
+            let obj = enhancer.fail(item);
+            expect(obj.durability).toBe(0);
+            expect(item).not.toBe(obj);
+        })
     });
 
     describe('Name Functionality', () =>{
